@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{width: 300px; height: 100px; border:1px solid black;
+           white-space: nowrap; /*줄단락을 없앰*/
+           overflow:hidden;/*테두리를 벗어난 것을 숨김*/
+           text-overflow: ellipsis; /*말줄임표 ...으로 표시*/
+        }
+
+        /*hover : 마우스 위에 올림 */
+        h3:hover{ 
+            white-space: normal; /*사각형 테두리에 맞춰서 줄단락 */
+            overflow:visible; /*다시 보이게 해라*/
+          
+        }
+        div{
+            width:300px; height: 100px; border:1px solid black;
+            /*white-space: nowrap;  nowrap-  줄단락을 없앰*/
+            overflow: scroll; /*hidden - 틀에 벗어난건 다 숨김, scroll - 스크롤이 생김*/
+        }
+        h2{width: 800px; height:200px; text-align: center;
+           border:1px solid black; 
+           text-shadow: 35px 35px 35px #f00; /* 폰트그림자 (좌우 상하 흩뿌리기 색상)*/
+           text-decoration: overline; /*line-through, overline, underline, non*/
+           letter-spacing: 30px; /*글자간격 - 자간*/
+           word-spacing: 30px; /*단어간격*/
+
+           font-size:50px;
+           /*글자색상*/
+           /*color: rgb(0,0,0,0.8); 투명도 설정가능*/
+          /*color: black; 문자색상적용 */
+           color:#000000;/*16진수 코드 적용 숫자중복시 세개만 적어도 가능 #000;*/
+           text-align: center; /*글자 가운데 정렬*/
+           margin:0 auto; /*사각 모델을가운데 정렬*/
+           line-height:190px; 
+           /*세로 가운데 정렬, padding+box sizing 을 안쓰기 위해서 이걸 씀*/
+           /*padding-top: 60px;  /*이것만 했을땐 총길이도 같이 늘어남*/
+           /*box-sizing: border-box; /*이거까지 해야 총길이가 안늘어남*/ 
+           /*세로 가운데 정렬*/
+        }
+        p{width:400px; height:500p; border:1px solid black; 
+          font-size:17px; font-weight:700;
+          line-height:60px; /*줄간격*/ /*위아래로 반반*/
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        필리핀의 유명 해양 관광지에서 산호가 훼손돼 몸살을 앓고 있습니다.
+    </h3>
+    <div>
+        필리핀의 유명 해양 관광지에서 산호가 훼손돼 몸살을 앓고 있습니다.
+
+        그리고 그 산호에는 한국인이 남긴 걸로 추정되는 글자들도 발견됐습니다.
+        
+        현지 매체는 지난 2일 필리핀 보홀에 위치한 버진아일랜드가 무기한 폐쇄됐다고 보도했습니다.
+        
+        버진아일랜드는 스노클링, 스쿠버다이빙 같은 각종 해양 스포츠를 즐기기 좋은 환경으로 관광객들에게 인기를 얻었는데요.
+        
+        최근 둘레 11m, 지름 3.7m인 산호가 관광객들에 의해 훼손된 걸로 나타났습니다.
+        
+        이렇게 여러 알파벳이 새겨져 있는데요.
+    </div>
+    <h2>글꼴 관련 스타일</h2>
+    <p>
+        필리핀의 유명 해양 관광지에서 산호가 훼손돼 몸살을 앓고 있습니다.
+
+그리고 그 산호에는 한국인이 남긴 걸로 추정되는 글자들도 발견됐습니다.
+
+현지 매체는 지난 2일 필리핀 보홀에 위치한 버진아일랜드가 무기한 폐쇄됐다고 보도했습니다.
+
+버진아일랜드는 스노클링, 스쿠버다이빙 같은 각종 해양 스포츠를 즐기기 좋은 환경으로 관광객들에게 인기를 얻었는데요.
+
+최근 둘레 11m, 지름 3.7m인 산호가 관광객들에 의해 훼손된 걸로 나타났습니다.
+
+이렇게 여러 알파벳이 새겨져 있는데요.
+
+자세히 보면 대문자로 김, 민 이렇게 한국 이름으로 보이는 문자들도 적혀 있습니다.
+
+현지 당국은 해양 보호를 위해 관광객들의 입도를 금지하는 무기한 폐쇄를 결정했습니다.
+
+    </p>
+
+</body>
+</html>
