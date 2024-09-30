@@ -6,11 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style_join02_info_input.css">
 		<link rel="stylesheet" type="text/css" href="css/style_footer.css">
 		<title>회원가입 - 회원정보입력</title>
-		<style>
-			#pwTxt{font-weight:700px;}
-			.on{color:blue;}
-			.off{color:red;}
-		</style>
+		
 	</head>
 	<body>
 		<header>
@@ -106,23 +102,6 @@
 						</dd>
 					</dl>
 					<dl id="join_pw1_dl">
-
-						<script>
-							function pwCheck(){
-								var pw1 = document.getElementById("pw1").value;
-								var pw2 = document.getElementById("pw2").value;
-								if(pw1 == pw2){
-									document.getElementById("pwTxt").innerText="비밀번호가 일치합니다.";
-									document.getElementById("pwTxt").classList.remove("off");
-									document.getElementById("pwTxt").classList.add("on");
-								}else{
-									document.getElementById("pwTxt").innerText="비밀번호가 일치하지않습니다.";
-									document.getElementById("pwTxt").classList.remove("on");
-									document.getElementById("pwTxt").classList.add("off");
-
-								}
-							}
-						</script>
 						<dt>
 							<div></div>
 							<label for="pw1">비밀번호</label>
@@ -139,8 +118,8 @@
 							<label for="pw2">비밀번호 확인</label>
 						</dt>
 						<dd>
-							<input type="password" id="pw2" name="pw2" minlength="8"  onkeyup="pwCheck()"  required/>
-							<span id="pwTxt"></span>
+							<input type="password" id="pw2" name="pw2" minlength="8" required />
+							<span>비밀번호를 다시 한번 입력해 주세요.</span>
 						</dd>
 					</dl>
 					<dl id="join_mail_dl">
