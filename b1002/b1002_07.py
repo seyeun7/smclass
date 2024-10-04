@@ -13,11 +13,13 @@ count = 0
 for idx,s in enumerate(students):
     if s[1] == name:
         del students[idx]
-        print("{'name'}을(를) 삭제합니다.")
+        print(f"{name}을(를) 삭제합니다.")
         count = 1
         break
-    else:
-     print ("찾고자 하는 이름이 없습니다.")
+if count == 0:
+  print ("찾고자 하는 이름이 없습니다.")
+
+    
 
 
 

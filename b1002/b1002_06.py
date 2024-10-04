@@ -14,7 +14,7 @@ students = [
 # del 삭제
 for idx,s in enumerate(students): 
     if s[1] == '이순신':
-      del students[idx] #del 로 삭제
+      del students[idx]         #del 로 삭제
 
 print(students)
 
