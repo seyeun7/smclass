@@ -26,6 +26,7 @@ while True:
    print("-"*30)
    for i in range(3):
       print(i,"|",end="\t")
+   
       for j in range(3):
          print(aa_list[i][j],end="\t")
       print()
