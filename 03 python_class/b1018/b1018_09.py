@@ -67,7 +67,7 @@ while True:
     elif choice == 3:
         search = input("찾고자 하는 이름을 입력하세요.>>")
         for s in Student.students:
-            if s [] == search:
+            if s [s.no] == search:
                 print("[ 수정과목 선택 ]")
                 print("1. 국어 2.영어 3.수학 0.이전화면이동")
                 choice = int(input("원하는 번호를 입력하세요.>> "))
